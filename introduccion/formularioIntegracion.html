@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <title>Alta de clientes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Alta de clientes</h1>
+            </div>
+        </div>
+        <form role="form" action="altaCliente.php" method="POST">
+            <div class="container">
+                <label class="control-label col-sm-2">NIF:</label>
+                    <div class="col-sm-10">
+                    <input type="text" name="NIF">
+                    </div>
+            </div>
+            <div class="container">
+                 <label class="control-label col-sm-2">Nombre: </label>
+                 <div class="col-sm-10">
+                 <input type="text" name="nombre">
+                 </div>
+            </div>
+            <div class="container">
+                <label class="control-label col-sm-2">Apellidos:</label>
+                <div class="col-sm-10">
+                <input type="text" name="apellidos">
+                </div>
+            </div>
+            <div class="container">
+                <label class="control-label col-sm-2"> Email:</label>
+                <div class="col-sm-10">
+                <input type="email" name="email">
+                </div>
+            </div>
+            <div class="container">
+                <label class="control-label col-sm-2"> Sexo: </label>
+                <div class="col-sm-10">
+                <input type="radio" name="sexo" value="hombre"> Hombre
+                <input type="radio" name="sexo" value="mujer"> Mujer 
+                </div>  
+            </div>
+            <div class="container"> 
+                <label class="control-label col-sm-2">   Ocupación: </label>
+                <div class="col-sm-10">
+                <input type="checkbox" name="ocupacion" value="estudia"> Estudia
+                <input type="checkbox" name="ocupacion" value="trabaja"> Trabaja
+                </div>
+            </div>
+            <div class="container">
+                <label class="control-label col-sm-2"> Provincia:</label>
+                <div class="col-sm-10">
+                <select name="provincia">
+                            <option value="Valencia" selected>Valencia</option>
+                            <option value="Castellon">Castellon</option>
+                            <option value="Alicante">Alicante</option>
+                            <option value="Otros">Otros</option>
+                        </select>
+                </div>
+            </div>
+            <div class="container">
+                <input type="submit" value="Guardar">
+            </div>
+        </form>
+          
+            
+    </body>
+</html>
