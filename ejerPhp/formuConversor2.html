@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Conversor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <form action="Conversor.php" method="post">
+                Introduce una cifra en euros: <input type="text" name="cifra"><br> €
+                Selecciona la moneda/s a la que
+                quieres hacer la conversion: <br>
+                <input type="checkbox" name="moneda[]" value="dolar" >Dolar
+                <input type="checkbox" name="moneda[]"  value="yuan">Yuan
+                <input type="checkbox" name="moneda[]" value="rublo">Rublo
+                <input type="checkbox" name="moneda[]" value="libra">Libra
+            <input type="submit">
+            </form>
+        </div>
+    </body>
+</html>
